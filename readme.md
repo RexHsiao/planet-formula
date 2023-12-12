@@ -1,4 +1,4 @@
-# Three.js Journey
+# Three.js Practice
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
@@ -15,3 +15,5 @@ npm run dev
 npm run build
 ```
 # planet-formula
+Based on the product design flow to create a 3D interactive web page
+[hsiao portfolio_planet formula_about.pdf](https://github.com/RexHsiao/planet-formula/files/13649702/hsiao.portfolio_planet.formula_about.pdf)
