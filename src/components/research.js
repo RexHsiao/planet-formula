@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { randomNumber } from '../functions.js'
+import { randomNumber, getRandomInt } from '../functions.js'
 const objectsDistance = 7
 
 /**
@@ -14,6 +14,8 @@ const parameter = {
   sphereCount: 7,
   tetrahedronCount: 7
 }
+
+const colorBox = ['#f49e24', '#01a0e9', '#79bc29', '#e94e6d', '#e7378d', '#ffe501', '#6dc6d4']
 
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 1)
 const sphereGeometry = new THREE.SphereGeometry(0.5, 10, 10)
@@ -33,7 +35,7 @@ const generateObjects = (count, geometry) => {
     const cube = new THREE.Mesh(
       geometry, 
       new THREE.MeshStandardMaterial({
-        color: '#ffeded'
+        color: colorBox[getRandomInt(colorBox.length)]
       })
     )
     cube.scale.x = cubeSize
